@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="My Web App">
+<meta name="apple-mobile-web-app-title" content="Mobile rules">
+<meta name="apple-mobile-web-app-status-bar-style" content="red">
+  <title>EEC Bookshelf</title>
+
+<link rel="stylesheet" href="https://eecmm.w3spaces.com/style.css">
+<link rel="stylesheet" href="https://eecmm.w3spaces.com/search.css">
+<link rel="stylesheet" href="search.css">
+<link rel="stylesheet" href="https://eecmm.w3spaces.com/footer.css">
+
+
+
+
+
+</head>
+<body>
+ 
+  <form>
+  <label for="search">Search HERE!</label>
+          <input id="search" onkeyup="search_books()" type="text"
+      name="search" placeholder="" pattern=".*\S.*" required>
+      <span class="caret"></span>
+  </form>       
+
+<!--<form>
+	<label for="search">Search</label>
+	<input id="search" type="search" pattern=".*\S.*" required>
+	<span class="caret"></span>
+</form>-->
+  
+
+ <script> 
+ 
+    // JavaScript code
+ function search_books() 
+  {
+    
+     let input =document.getElementById('search').value
+
+
+  
+    input=input.toLowerCase();
+   let x = document.getElementsByClassName('book'); 
+  
+    
+    for (i = 0; i < x.length; i++) {
+      if (!x[i].innerHTML.toLowerCase().includes(input)) {
+        x[i].style.display="none";
+        
+        
+      }
+      else {
+        x[i].style.display="block";
+        x[i].style.display="";
+        
+      }
+ 
+    }
+    
+  }
+  </script>
+
+ <!-- partial:index.partial.html -->
+<div id="search">
+<div class="bookshelf">
+  <div class="book-grid">
+    <ul class="check">
+      <li class="book"><a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:a64d2e01-6941-42db-9e88-67b4ed5ba4fc" target="_blank"> <img src="https://i.ibb.co/1sMxdx0/Screenshot-20220630-153825.png" alt="diana_wynne_jones_castle_in_the_air"></a></li>
+      <li class="book"><a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:8e1ac4e3-9931-4079-b38f-44bc7c0e6680"target="_blank"> <img src="https://i.ibb.co/XpkpyM0/Screenshot-20220630-153907.png" alt="neil_gaiman_coraline"></a></li>
+      <li class="book"><a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:ae11d90f-8865-44ce-b2b7-fa6a41ffd37a"target="_blank"> <img src="https://i.ibb.co/GVd5Gm6/Screenshot-20220630-153933.png" alt="diana_wynee_jones_howl_moving_castle"></a></li>
+    </ul>
+  </div>
+  <div class="shelf-shadows"></div>
+  <div class="shelf"></div>
+</div>
+<div class="bookshelf">
+  <div class="book-grid">
+    <ul class="check">
+      <li class="book"><a href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:0cba88f4-48ab-4525-b15f-7300ca5743b9" target="_blank"> <img src="https://i.ibb.co/bJrrPB2/Screenshot-20220630-154001.png" alt="tayza_volume"></a></li>
+      <li class="book"><a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:70935ed7-972f-40c4-8937-4a57e53e3f5c" target="_blank"> <img src="https://i.ibb.co/RYGqMMD/Screenshot-20220630-154014.png" alt="ye_myat_Lwin_japan_short_stories"></a></li>
+      <li class="book"><a href="https://pdfhost.io/v/L05suvuHC_kayinni_traditional_stories" target="_blank"> <img src="https://i.ibb.co/T2d0Y1J/Screenshot-20220630-154037.png" alt="ka_yin_ni_short_stories_traditional_yoe_yar"></a></li>
+    </ul>
+  </div>
+  <div class="shelf-shadows"></div>
+  <div class="shelf"></div>
+</div>
+<div class="bookshelf">
+  <div class="book-grid">
+    <ul class="check">
+      <li class="book"><a href="https://pdfhost.io/edit?doc=275aacc1-b841-421a-afd8-56136318b63f" target="_blank"> <img src="https://i.ibb.co/mq3VnYw/Screenshot-20220630-154701.png" alt="min_thut_wai_u_poe_kyar"></a></li>
+      <li class="book"><a href="https://pdfhost.io/v/83RTNzjy1_UPayThein_PonePaMa" target="_blank"> <img src="https://i.ibb.co/W2ZLpbM/Screenshot-20220630-154057.png" alt="pone_pa_mar_u_pay_thein"></a></li>
+      <li class="book"><a href="https://pdfhost.io/v/kJ6iKyCoS_ZayYar_Pwint" target="_blank"> <img src="https://i.ibb.co/BL5BRS0/Screenshot-20220630-154112.png" alt="zay_yar_myanmar_myat_pwint"></a></li>
+    </ul>
+  </div>
+  <div class="shelf-shadows"></div>
+  <div class="shelf"></div>
+</div>
+<div class="bookshelf">
+  <div class="book-grid">
+    <ul class="check">
+      <li class="book"><a href="https://pdfhost.io/v/kcfeIiNjf_TintTal_ZaMudf" target="_blank"> <img src="https://i.ibb.co/wRpJbbB/Screenshot-20220630-154132.png" alt="tin_tal_kapapala_ka_pa_pa_la"></a></li>
+      <li class="book"><a href="https://pdfhost.io/v/y0o8pNRuw_MyitTarShinLayPawliYanTar_HtinLin" target="_blank"> <img src="https://i.ibb.co/4gNf7wW/Screenshot-20220630-154148.png" alt="htin_lin_paw_li_yar_nar_myit_tar_shin_ma_lay"></a></li>
+      <li class="book"><a href="https://pdfhost.io/v/sDpCZXkPB_Astrophysics_for_people_in_a_Hurry_ByNEIL_DEGRASSE_TYSON" target="_blank"> <img src="https://i.ibb.co/fHhZW9h/Screenshot-20220630-154204.png" alt="astrophysics_astro_physics_neil_derasse_tyson"></a></li>
+    </ul>
+  </div>
+  <div class="shelf-shadows"></div>
+  <div class="shelf"></div>
+</div>
+<div class="bookshelf">
+  <div class="book-grid">
+    <ul class="check">
+      <li class="book"><a href="https://pdfhost.io/v/Hs8HFaH8P_" target="_blank"> <img src="https://i.ibb.co/hK4bsD7/Screenshot-20220630-154225.png" alt="summer_night_naing_win_swe_novel"></a></li>
+      <li class="book"><a href="https://pdfhost.io/v/yMI9.vlet_MaTheinShinSiPoePayPar_NgWinSwe" target="_blank"> <img src="https://i.ibb.co/7XBMTYf/Screenshot-20220630-154242.png" alt="ma_thein_send_poe_pay_pr_naing_win_swe"></a></li>
+      <li class="book"><a href="https://pdfhost.io/v/l8YchTvqm_bagan" target="_blank"> <img src="https://i.ibb.co/3TbWLDW/Screenshot-20220630-154337.png" alt="bagan_heros_of_myanmar_taw_tar_swe_burma"></a></li>
+    </ul>
+  </div>
+  <div class="shelf-shadows"></div>
+  <div class="shelf"></div>
+</div>
+<div class="bookshelf">
+  <div class="book-grid">
+    <ul class="check">
+      <li class="book"><a href="https://pdfhost.io/v/UYSRYtj1p_200_Min_Yu_Wai_01MDI" target="_blank"> <img src="https://i.ibb.co/XDRxvF5/Screenshot-20220630-154408.png" alt="first_myanmar_burma_min_yu_wai"></a></li>
+      <li class="book"><a href="https://pdfhost.io/v/2ZK0Flw7S_NyiMaLayKaaChitKoKoeKwalThaTaeLr_MoeMoe" target="_blank"> <img src="https://i.ibb.co/MRmbDFY/Screenshot-20220630-154502.png" alt="moe_moe_inn_lar_nyi_ma_sister_lay_ka_a_chit_achit_love_ko_koe_kwal_lr"></a></li>
+      <li class="book"><a href="https://pdfhost.io/v/6vVkVHYRt_Lived_in_Myanmar_Moe_Moe_Inya_" target="_blank"> <img src="https://i.ibb.co/3WBSxYz/Screenshot-20220630-154523.png" alt="moe_moe_inn_lar_live_in_myanmar_burma_myanmarpyi_mr_nay_kyar_tl"></a></li>
+    </ul>
+  </div>
+  <div class="shelf-shadows"></div>
+  <div class="shelf"></div>
+</div>
+<div class="bookshelf">
+  <div class="book-grid">
+    <ul class="check">
+      <li class="book"><a href="https://pdfhost.io/v/q3oIIcojO_mgthinyawminkyi" target="_blank"> <img src="https://i.ibb.co/y6GYYzT/Screenshot-20220630-154542.png" alt="yay_min_gyi_u_poe_hlaing_yar_zar_di_thin_kha_novel_mg_htin_about"></a></li>
+      <li class="book"><a href="https://pdfhost.io/v/S.vx4bkEe_ShweOoDaung" target="_blank"> <img src="https://i.ibb.co/chJXJC4/Screenshot-20220630-154603.png" alt="shwe_u_daung_thoughs_think_forever_life_tat_thet_tar_a_twae_a_kaw_myar"></a></li>
+      <li class="book"><a href="https://pdfhost.io/v/COLwhjMMX_MgLuAye" target="_blank"> <img src="https://i.ibb.co/Fsc1HkN/Screenshot-20220630-154645.png" alt="theit_pan_mg_wa_mg_lu_aye"></a></li>
+    </ul>
+  </div>
+  <div class="shelf-shadows"></div>
+  <div class="shelf"></div>
+</div>
+<div class="bookshelf">
+  <div class="book-grid">
+    <ul class="check">
+      <li class="book"><a href="http://dhammadownload.com/File-Library/other/BuddhaWardaPyatThaNarMyar.pdf" target="_blank"> <img src="https://i.ibb.co/JvYcqXj/download.jpg" alt="buddha_problems_issues_buddhist_a_shin_a_yi_ya_dhamma_monk"></a></li>
+      <li class="book"><a href="https://pdfhost.io/v/W0A~CqaAv_Road_by_Moe_Moe_Inyarmdi" target="_blank"> <img src="https://i.ibb.co/q0qShrb/Screenshot-20220630-225311.png" alt="moe_moe_inn_lar_lost_street_doubt_pouk_taw_lan_mar_san_tat_war_war"></a></li>
+      <li class="book"><a href="https://pdfhost.io/v/hakkj1AwG______" target="_blank"> <img src="https://i.ibb.co/HBVxskb/Screenshot-20220701-142648.png" alt="genera_ag_san_bo_byoke_arzarni_day_than_win_hlaing"></a></li>
+    </ul>
+  </div>
+  <div class="shelf-shadows"></div>
+  <div class="shelf"></div>
+</div>
+<div class="bookshelf">
+  <div class="book-grid">
+    <ul class="check">
+      <li class="book"><a href="https://pdfhost.io/v/wGejleKcr_Thein_Pyay_Myint" target="_blank"> <img src="https://i.ibb.co/4TrjwSt/Screenshot-20220701-193025.png" alt="thein_pay_myint_small_things_don't_sad_a_tay_a_pwae_sate_ma_nyit"></a></li>
+      <li class="book"><a href="https://pdfhost.io/v/.BwhhMPWc_56867777" target="_blank"> <img src="https://i.ibb.co/WpcMsDQ/36067628-SY475.jpg" alt="thein_pay_myint_sharing_thoughts_mya_wai_lo_taw_atwae_myar"></a></li>
+      <li class="book"><a href="https://pdfhost.io/v/1Z37en~gx_why_are_they_famous" target="_blank"> <img src="https://i.ibb.co/PQ388tH/Screenshot-20220701-203614.png" alt="thein_pay_myint_why_are_they_famous_thu_toe_br_lo_kyaw_kyar_lal"></a></li>
+    </ul>
+  </div>
+  <div class="shelf-shadows"></div>
+  <div class="shelf"></di#searchbar {
+    text-align: center;
+  }v>
+</div>
+
+<div class="bookshelf">
+  <div class="book-grid">
+    <ul class="check">
+      <li class="book"><a  href="https://pdfhost.io/v/zf74F4Pec_enterprenur" target="_blank"> <img src="https://i.ibb.co/NFFq8wp/Screenshot-20220701-203650.png" alt="thein_pay_myint"></a></li>
+      <li class="book"><a href="https://pdfhost.io/v/utlT0Qlo7_frompoortorich" target="_blank"> <img src="https://i.ibb.co/7Kg5dPy/Screenshot-20220701-203715.png" alt="thein_pay_myint"></a></li>
+      <li class="book"><a href="https://drive.google.com/file/d/1CR84ucXHofpTMqqCRkmtfS_v122V68-M/view?usp=sharing" target="_blank"> <img src="https://i.ibb.co/p3s5vWg/Screenshot-20220701-215058.png" alt="thein_pay_myint"></a></li>
+    </ul>
+  </div>
+  <div class="shelf-shadows"></div>
+  <div class="shelf"></div>
+</div>
+</div>
+<!--
+<div class="bookshelf">
+  <div class="book-grid">
+    <ul class="check">
+      <li class="book"><a href="" target="_blank"> <img src="" alt=""></a></li>
+      <li class="book"><a href="" target="_blank"> <img src="" alt=""></a></li>
+      <li class="book"><a href="" target="_blank"> <img src="" alt=""></a></li>
+    </ul>
+  </div>
+  <div class="shelf-shadows"></div>
+  <div class="shelf"></div>
+</div>
+-->  
+<hr> 
+<footer class="footer-outer">
+  <div class="container footer-inner">
+
+    <div class="footer-three-grid wow fadeIn animated" data-wow-delay="0.66s">
+      <div class="column-1-3">
+        <h3 style="color:white;">EEC စာပေအိမ်</h3>
+      </div>
+      <div class="column-2-3">
+        
+      </div>
+      <div class="column-3-3">
+        <div class="social-icons-footer">
+          
+          <a href="https://t.me/+Rmqd3cG6hXU4NzNl"><i class='fa fa-telegram' style='color: blue'></a></i>
+          
+        </div>
+      </div>
+    </div>
+
+    <span class="border-bottom-footer"></span>
+
+          
+    <p class="copyright">&copy; 2022. created by <a href="https://t.me/+Rmqd3cG6hXU4NzNl" target="_blank">Essential Education Center</a>.</p>
+
+  </div>
+</footer>
+</body>
+</html>
